@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>People Management</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                margin: 30px;
+            }
+            form * {
+                margin-bottom: 10px;
+                /* border: 1px solid violet; */
+            }
+            th {
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form name="form">
+                <input type="text" name="name" placeholder="Name">
+                <select name="sex" id="sex">
+                    <option value="">Select your sex</option>                    
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input id="date" type="date" name="birthday">
+                <input type="text" name="address" placeholder="Address">
+                <input id="telNo" type="tel" name="phone" placeholder="Phone">
+                <input id="emailAddress" type="email" name="email" placeholder="Email">
+                <input type="button" name="save" value="Save">            
+            </form>
+
+            <table id='table'>
+                <tr>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Birth Date</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </table>
+        </div>
+        
+
+        <script src="people.js"></script>
+    </body>
+</html>

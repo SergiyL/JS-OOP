@@ -1,0 +1,23 @@
+
+.task {
+    width: 220px;
+    margin: 0 10px;
+    color: red;
+}
+.container h1 {
+    align-self: flex-start;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 20vh;
+} 
+.buttons {
+    margin: 40vh auto;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    position: relative;
+}
